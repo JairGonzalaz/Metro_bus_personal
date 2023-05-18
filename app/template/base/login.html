@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/style_login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("form").submit(function(e) {
+                e.preventDefault();
+                $(".login-form").fadeOut(1000, function() {
+                    // Aquí puedes agregar cualquier otra acción después de que se haya desvanecido el formulario
+                    alert("¡Inicio de sesión exitoso!");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h1>Iniciar sesión</h1>
+            <form>
+                <input type="text" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
