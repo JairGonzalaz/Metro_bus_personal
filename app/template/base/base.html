@@ -1,16 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../static/base/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/style.css' %}"
+    >
+    {% block title%}
     <title>Metro Bus APP</title>
+    {%endblock title%}
 </head>
 <body>
     {% block header %}
     <header>
-        <h1>Metro Bus</h1>
+        <h1 class="metrobus">Metro Bus</h1>
     </header>
     
     <nav>
@@ -19,9 +23,11 @@
             <li><a href="#">Artículos</a></li>
             <li><a href="#">Acerca de</a></li>
             <li><a href="#">Contacto</a></li>
+            <li><a href="#">Cerrar Sesion</a></li>
         </ul>
     </nav>
     {% endblock header %}
+    {% block main_container %}
     <main>
         <article>
             <h2>Título del artículo</h2>
@@ -33,10 +39,13 @@
             <p>Este es otro contenido de artículo.</p>
         </article>
     </main>
-    
+    {% endblock main_container %}
+    {% block footer_container %}
     <footer>
         <p>&copy; 2023 Mi Blog. Todos los derechos reservados.</p>
     </footer>
-    
+    {% endblock footer_container %}
+    {% block js_page %}
+    {% endblock js_page %}
 </body>
 </html>
