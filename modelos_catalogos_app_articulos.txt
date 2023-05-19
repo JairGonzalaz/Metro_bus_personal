@@ -1,0 +1,25 @@
+Modelo "Artículo"
+id:
+titulo:
+contenido:
+fecha_publicacion:
+autor:
+categoria:
+etiquetas:
+imagen:
+
+Modelo "Autor":
+id:
+nombre:
+foto:
+correo:
+contraseña:
+
+Modelo "Categoría"
+id:
+nombre:
+descripccion:
+
+Modelo "Etiqueta"
+id:
+nombres:
