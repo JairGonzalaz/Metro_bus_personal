@@ -1,0 +1,37 @@
+{% extends 'base/base.html %}
+{% load static %}
+
+{% block title%}
+<title>Articulos</title>
+<!--<link rel="stylesheet" type="text/css" href="{% static 'articulo/css/style.css' %}"
+    >-->
+    <link rel="stylesheet" type="text/css" href="../../../static/articulo/css/style.css"
+    >  
+{% endblck%}
+
+{% block main_container %}
+  <h1>Artículos</h1>
+
+  <article>
+    <h2>Título del Artículo 1</h2>
+    <img src="ruta/imagen1.jpg" alt="Imagen del Artículo 1">
+    <p>Descripción del Artículo 1.</p>
+  </article>
+
+  <article>
+    <h2>Título del Artículo 2</h2>
+    <img src="ruta/imagen2.jpg" alt="Imagen del Artículo 2">
+    <p>Descripción del Artículo 2.</p>
+  </article>
+
+  <article>
+    <h2>Título del Artículo 3</h2>
+    <img src="ruta/imagen3.jpg" alt="Imagen del Artículo 3">
+    <p>Descripción del Artículo 3.</p>
+  </article>
+
+{% endblock %}
+
+{% block js_page %}
+{% endblock %}
+

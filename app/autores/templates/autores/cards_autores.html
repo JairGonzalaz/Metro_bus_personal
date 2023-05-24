@@ -1,0 +1,43 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title%}
+    <title>Autores</title>
+    <link rel="stylesheet" href={% static 'autor/css/style.css'%}>
+{%endblock title%}
+
+{% block header %}
+{% endblock%}
+
+{% block main_container %}
+<h1>Autores</h1>
+
+  <div class="author-card">
+    <img src="ruta/foto_autor1.jpg" alt="Foto del Autor 1" class="author-photo">
+    <h2>Autor 1</h2>
+    <div class="ranking">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="rating">5.0</span>
+    </div>
+  </div>
+
+  <div class="author-card">
+    <img src="ruta/foto_autor2.jpg" alt="Foto del Autor 2" class="author-photo">
+    <h2>Autor 2</h2>
+    <div class="ranking">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="rating">5.0</span>
+    </div>
+  </div>
+
+  <div class="author-card">
+    <img src="ruta/foto_autor3.jpg" alt="Foto del Autor 3" class="author-photo">
+    <h2>Autor 3</h2>
+    <div class="ranking">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="rating">5.0</span>
+    </div>
+  </div>
+
+{% endblock %}
+

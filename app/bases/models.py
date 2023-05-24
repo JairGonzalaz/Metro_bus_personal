@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class ClaseModelo(models.Model):
-    estado=models.BooleanField(default=True)#estado activo/inactivo
+    estado = models.BooleanField(default=True)#estado activo/inactivo
     fc = models.DateTimeField(auto_now_add=True)#fecha creacion 
     fm = models.DateTimeField(auto_now=True)# fecha modificacion
     uc = models.ForeignKey(User,on_delete=models.CASCADE)#usuario crea

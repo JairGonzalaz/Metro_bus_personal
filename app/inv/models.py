@@ -1,21 +1,20 @@
 from django.db import models
 
 from bases.models import ClaseModelo
-
 # Create your models here.
 
 class Categoria(ClaseModelo):
-    descripccion =models.CharField(
+    descripcion = models.CharField(
         max_length=100,
-        help_text='Descripccion de categoria',
+        help_text='descripccion  de la categoria',
         unique=True
-    )
-
+        )
+    
     def __str__(self):
-        return '{}'.format(self.descripccion)
+        return '{}'.format(self.descripcion)
     
     def save(self):
-        self.descripccion = self.descripccion.upper()
+        self.descripcion = self.descripcion.upper()
         super(Categoria,self).save()
 
     class Meta:
