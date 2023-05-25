@@ -11,4 +11,5 @@ class AutorView(LoginRequiredMixin,generic.CreateView):
     template_name = "autores/cards_autores.html"
     context_object_name="obj" 
     login_url = 'bases:login'
+    fields = ['nombre']
 

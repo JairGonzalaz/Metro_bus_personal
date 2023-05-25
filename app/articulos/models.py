@@ -5,7 +5,7 @@ from bases.models import ClaseModelo
 # Create your models here.
 
 class Categoria(ClaseModelo):
-    descripccion =models.CharField(
+    descripccion = models.CharField(
         max_length=100,
         help_text='Descripccion de categoria',
         unique=True

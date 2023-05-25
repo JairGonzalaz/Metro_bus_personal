@@ -12,21 +12,21 @@
     {%endblock title%}
 </head>
 <body>
-    {% block header %}
-    <header>
-        <h1 class="metrobus">Metro Bus</h1>
-    </header>
+    {% block header %}<!DOCTYPE html>
+        <header>
+            <h1 class="metrobus">Metro Bus</h1>
+            <nav>
+                <ul>
+                    <li><a href=" {% url 'bases:home' %}">Home</a></li>
+                    <li><a href="{% url 'articulos:articulos' %}">Artículos</a></li>
+                    <li><a href="{% url 'autores:autores' %}">Autores</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="{% url 'bases:logout'%}">Cerrar Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
     
-    <nav>
-        <ul>
-            <li><a href=" {% url 'bases:home' %}">Home</a></li>
-            <li><a href="{% url 'articulos:articulos' %}">Artículos</a></li>
-            <li><a href="{% url 'autores:autores' %}">Autores</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="{% url 'bases:logout'%}">Cerrar Sesion</a></li>
-        </ul>
-    </nav>
     {% endblock header %}
     {% block main_container %}
     <main>

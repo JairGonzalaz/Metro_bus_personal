@@ -6,12 +6,8 @@ from bases.models import ClaseModelo
 
 class Autor(ClaseModelo):
     nombre = models.CharField(
-        max_length=100,
-        default ='anonimo'
+        max_length=100
         )
-    
-    
-    
     
     def __str__(self):
         return '()'.format(self.nombre)

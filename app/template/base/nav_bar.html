@@ -1,0 +1,23 @@
+{% load  static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" type="text/css" href="../../static/base/css/nav_bar.css">
+</head>
+<body>
+    <header>
+        <h1 class="metrobus">Metro Bus</h1>
+        <nav>
+            <ul>
+                <li><a href=" {% url 'bases:home' %}">Home</a></li>
+                <li><a href="{% url 'articulos:articulos' %}">Artículos</a></li>
+                <li><a href="{% url 'autores:autores' %}">Autores</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="{% url 'bases:logout'%}">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
