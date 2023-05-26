@@ -15,30 +15,31 @@
     {% block header %}<!DOCTYPE html>
         <header>
             <h1 class="metrobus">Metro Bus</h1>
-            <nav>
-                <ul>
-                    <li><a href=" {% url 'bases:home' %}">Home</a></li>
-                    <li><a href="{% url 'articulos:articulos' %}">Artículos</a></li>
-                    <li><a href="{% url 'autores:autores' %}">Autores</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="{% url 'bases:logout'%}">Cerrar Sesion</a></li>
+            <nav class="nav_bar">
+                <ul class="nav_bar_ul">
+                    <li class="list_item"><a class="a_link" href=" {% url 'bases:home' %}">Home</a></li>
+                    <li class="list_item"><a class="a_link" href="{% url 'articulos:articulos' %}">Artículos</a></li>
+                    <li class="list_item"><a class="a_link" href="{% url 'autores:autores' %}">Autores</a></li>
+                    <li class="list_item"><a class="a_link" href="#">Galeria</a></li>
+                    <li class="list_item"><a class="a_link" href="#">Contacto</a></li>
+                    <li class="list_item"><a class="a_link" href="{% url 'bases:logout'%}">Cerrar Sesion</a></li>
                 </ul>
             </nav>
         </header>
     
     {% endblock header %}
     {% block main_container %}
-    <main>
-        <article>
-            <h2>Título del artículo</h2>
-            <p>Este es el contenido del artículo.</p>
-        </article>
-        
-        <article>
-            <h2>Otro título de artículo</h2>
-            <p>Este es otro contenido de artículo.</p>
-        </article>
+    <main class="main_container">
+        <div id="contenedor">
+            <div class="noticia-semana">
+              <h2>Noticia de la semana</h2>
+              <p>Contenido de la noticia...</p>
+            </div>
+            <div class="autor-semana">
+              <h2>Autor de la semana</h2>
+              <p>Información sobre el autor...</p>
+            </div>
+          </div>
     </main>
     {% endblock main_container %}
     {% block footer_container %}

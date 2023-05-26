@@ -1,5 +1,5 @@
 /* Reset de estilos */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
+html, body, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,37 +18,36 @@ body {
 
 header {
     background-color: #d2202f;
-    color: #fff;
     padding: 20px;
     text-align: start;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    }
 
-h1 {
+.metrobus {
     font-size: 32px;
     margin-bottom: 10px;
     color: #f8f8f8;
 }
-nav
+.nav_bar
 {
     position: fixed;
     display: contents;
 }
-nav ul {
+.nav_bar_ul {
     list-style-type: none;
     padding: 10px;
     text-align: right;
 }
 
-nav ul li {
+.list_item{
     display: inline;
     margin-right: 10px;
 }
 
-li a:hover {
+.a_link:hover {
     background-color:#f8f8f8;
+    color: #d2202f;
   }
-nav ul li a {
+.a_link {
     color: #f8f8f8;
     text-decoration: none;
     padding: 5px;
@@ -56,15 +55,11 @@ nav ul li a {
     
 }
 
-nav ul li a:hover {
-    color: #d2202f;
-}
-
-main {
+.main_container {
     padding: 20px;
 }
 
-article {
+.contenedor {
     margin-bottom: 20px;
     background-color: #fff;
     padding: 20px;
@@ -73,7 +68,7 @@ article {
     display: flex;
 }
 
-article:hover {
+.contenedor:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -97,4 +92,9 @@ footer {
 footer p {
     margin-bottom: 0;
 }
-
+/*_______________diseño to de la semana___________________*/
+  
+ #noticia-semana div,
+  #autor-semana div {
+    flex: 1;
+  }
